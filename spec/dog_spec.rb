@@ -16,14 +16,14 @@ describe "Dog" do
     end
   end
 
-  describe "#clear_all" do 
+  describe ".clear_all" do 
     it "is a class method that empties the @@all array of all existing dogs" do 
       Dog.clear_all
       expect(Dog.class_variable_get(:@@all)).to match([]  )
     end
   end
 
-  describe "#all" do
+  describe ".all" do
     it "is a class method that puts out the name of each dog to the terminal" do 
       expect{Dog.all}.to output("Pluto\nFido\nMaddy\n").to_stdout
     end 
