@@ -1,9 +1,5 @@
 class Dog
   @@all = []
-  @@clear_all = Array.new
-  @@clear_all << @@all.dup
-  @@all.clear
-  p @@clear_all
 
      attr_accessor :name
  
@@ -16,9 +12,12 @@ class Dog
         @@all.each do |dog|
             puts dog.name
         end
-        @@all.clear
+  
     end
 
+def self.clear_all
+      @@all.clear 
+    end
 
 end
 
