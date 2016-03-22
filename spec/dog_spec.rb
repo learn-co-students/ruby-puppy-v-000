@@ -10,8 +10,8 @@ describe "Dog" do
     Dog.class_variable_set(:@@all, [])
   end
   
-  describe "Dog class variables" do 
-    it "has a class variable, @@all, the points to an array" do 
+  describe "class variable" do 
+    it "has a class variable, @@all, that points to an array" do 
       expect(Dog.class_variable_get(:@@all)).to be_a(Array)
     end
   end
