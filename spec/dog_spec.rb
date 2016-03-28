@@ -34,7 +34,7 @@ describe "Dog" do
     end
 
     it "adds the new dog to the @@all array" do
-      expect(Dog.class_variable_get(:@@all)).to match([pluto, fido, maddy]) 
+      expect(Dog.class_variable_get(:@@all)).to match(["Pluto", "Fido", "Maddy"]) 
     end
   end
 
