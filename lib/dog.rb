@@ -16,7 +16,7 @@ class Dog
   end
 
   def self.all
-    @@all.collect do |puppy|
+    @@all.each do |puppy|
       puts puppy.name
     end
     # binding.pry
