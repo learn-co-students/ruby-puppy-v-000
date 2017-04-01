@@ -1,16 +1,19 @@
 class Dog
   @@all = []
 
-  def initialize
+  attr_accessor :name
+
+  def initialize(name)
+    @name = name
     @@all << self
   end
 
   def self.all
-    @@all.each {|name| puts name}
+    @@all.each {|dog| puts dog.name}
   end
 
   def self.clear_all
-    #Array.clear method
+    @@all.clear
   end
 
   
