@@ -9,6 +9,7 @@ class Dog
   end
 
   def self.clear_all
+    # Or @@all.clear Array class method can also be used.
     @@all = []
   end
 
