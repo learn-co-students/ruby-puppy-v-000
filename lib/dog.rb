@@ -1,5 +1,5 @@
 class Dog
-     
+     require 'pry'
     attr_accessor :name
     @@all = [] 
  
@@ -7,6 +7,7 @@ class Dog
      def initialize(name)
           @name = name
           @@all << self
+     
      end
      #this puts out the name of each dog to the termainal
      def self.all
