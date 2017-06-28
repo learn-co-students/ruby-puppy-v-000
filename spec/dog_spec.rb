@@ -1,5 +1,5 @@
 require "spec_helper"
-
+require 'pry'
 describe "Dog" do 
 
   let!(:pluto) { Dog.new("Pluto") }
