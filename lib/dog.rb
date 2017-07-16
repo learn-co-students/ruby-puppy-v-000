@@ -1,3 +1,7 @@
+=begin
+  Written by: Naomi Dennis
+  Github: www.github.com/Naomi-Dennis
+=end
 class Dog
   attr_accessor :name
   #class variables
