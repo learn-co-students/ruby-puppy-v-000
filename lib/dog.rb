@@ -1,3 +1,4 @@
+require 'pry'
 class Dog
   attr_accessor :name
   @@all = []
@@ -8,7 +9,8 @@ class Dog
   end
 
   def self.all
-    @@all.each {|dog| puts dog.name}
+    # @@all.each {|dog| puts dog.name} #returns weird side effects doing this.
+    puts @@all.map {|dog| dog.name}
   end
 
   def self.clear_all
@@ -16,3 +18,5 @@ class Dog
   end
 
 end
+
+# binding.pry
