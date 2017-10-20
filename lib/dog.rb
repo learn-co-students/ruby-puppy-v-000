@@ -1,5 +1,5 @@
 class Dog
-  attr_reader :name
+  attr_accessor :name
 
   @@all = []
 
@@ -9,12 +9,15 @@ class Dog
   end
 
   def self.clear_all
-    @@all = []
+    # @@all = []
+    @@all.clear
   end
 
   def self.all
     @@all.each do |dog|
       puts dog.name
     end
+    # puts @@all.map { |dog| dog.name}
+    # or puts @@all.map(&:name)
   end
 end
