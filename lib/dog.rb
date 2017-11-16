@@ -1,4 +1,6 @@
+require 'pry'
 #create class Dog 
+
 #
 #create initialize method with: 
 #  - name
