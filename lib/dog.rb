@@ -23,7 +23,7 @@ class Dog
   
   def self.all
     @@all.each do |puppy| 
-      puts Dog.name
+      puts puppy.name
     end
     
   end
