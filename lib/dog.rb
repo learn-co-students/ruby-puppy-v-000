@@ -11,7 +11,10 @@ class Dog
   def initialize(name)
     @name = name
   end
-
+  
+  def self.clear_all # class method - have to use self keyword
+    @@all.clear
+  end
   
 #  
 #create class method for:
