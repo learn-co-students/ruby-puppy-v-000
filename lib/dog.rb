@@ -10,18 +10,23 @@ class Dog
 #  - name
   def initialize(name)
     @name = name
+    @@all << self
   end
-  
-  def self.clear_all # class method - have to use self keyword
-    @@all.clear
-  end
-  
-#  
 #create class method for:
 #  - clear_all
 #  - all
 #  - new 
-#  
+  def self.clear_all # class method - have to use self keyword
+    @@all.clear
+  end
+  
+  
+  def self.all
+    @@all.each do |puppy| 
+      puts Dog.name
+    end
+    
+  end
 #create instance method for name 
   
 end
