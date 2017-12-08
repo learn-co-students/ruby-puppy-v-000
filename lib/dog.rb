@@ -9,10 +9,12 @@ class Dog
     @@all << self
   end
 
-  def self.all?
-    @@all.self do |puppy|
-      puts puppy.name
-    end
+  def self.all
+      puts @@all.map{ |dog| dog.name }
+  end
+
+  def self.clear_all
+    @@all.clear
   end
 
 end
