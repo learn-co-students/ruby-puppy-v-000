@@ -19,7 +19,7 @@ describe "Dog" do
   describe ".clear_all" do
     it "is a class method that empties the @@all array of all existing dogs" do
       Dog.clear_all
-      expect(Dog.class_variable_get(:@@all)).to match([]  )
+      expect(Dog.class_variable_get(:@@all)).to match([])
     end
   end
 
