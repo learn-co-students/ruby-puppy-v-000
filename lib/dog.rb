@@ -2,11 +2,9 @@ class Dog
           @@all = []
       attr_accessor :name
 
-
-
       def initialize(name)
           @name = name
-          @@all<< self #self refer to Dog class
+          @@all<< self #self refer to Dog class  line #1
       end
 
       def self.clear_all
