@@ -1,6 +1,6 @@
 class Dog
 
-  attr_reader :name
+  attr_accessor :name
 
   @@all = []
 
@@ -10,9 +10,7 @@ class Dog
   end
 
   def self.all
-    @@all.each do |dog|
-      puts "#{dog.name}"
-    end
+    @@all.each {|dog| puts "#{dog.name}"}
   end
 
   def self.clear_all
