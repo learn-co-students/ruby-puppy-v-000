@@ -13,9 +13,7 @@ class Dog
   end
 
   def self.all
-    @@all.each do |dog|
-      puts dog.name
-    end
+    @@all.map(&:name)
   end
 
 end
