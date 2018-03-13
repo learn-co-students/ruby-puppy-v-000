@@ -11,7 +11,6 @@ attr_reader :name
   end
 
   def self.clear_all
-    @@all = []
+    @@all.clear
   end
-
 end
