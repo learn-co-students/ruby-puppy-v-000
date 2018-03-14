@@ -1,0 +1,22 @@
+class Dog
+
+  @@all = []
+
+  attr_reader :name
+
+  def initialize(name)
+    @name = name
+    @@all << self
+  end
+
+
+
+  def self.all
+    @@all.each do |puppy|
+      puts puppy.name
+    end
+  end
+  def self.clear_all
+    return @@all.clear
+  end
+end
