@@ -19,10 +19,4 @@ class Dog
     @@all.map {|dog_name| puts dog_name.name}
   end
 
-
-  def name
-    @name
-  end
-
-
 end
