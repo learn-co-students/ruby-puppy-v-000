@@ -12,6 +12,7 @@ class Dog
   def self.all
     @@all.each do |puppy|
       puts puppy.name
+      # or can be written as: puts @@all.map{ |puppy| puppy.name }
     end
   end
 
