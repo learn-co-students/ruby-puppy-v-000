@@ -15,6 +15,4 @@ class Dog
     end
   end
   
-  Dog.clear_all = []
-  end
 end
