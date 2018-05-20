@@ -15,4 +15,9 @@ class Dog
     end
   end
   
+  def self.clear_all
+    @@all.clear do |dog|
+  end
+end
+  
 end
