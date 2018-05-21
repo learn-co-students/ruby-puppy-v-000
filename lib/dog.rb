@@ -12,6 +12,9 @@ class Dog
   end
 
   def self.all
+    # this is an amazingly simpler way (it uses Symbol#to_proc)
+    # @all.map(&:name)
+    
     @@all.each {|dog| puts dog.name }
   end
 
