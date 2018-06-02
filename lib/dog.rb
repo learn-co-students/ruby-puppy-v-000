@@ -6,10 +6,6 @@ class Dog
     @@all.push(self)
   end
   
-  def name
-    @name
-  end
-  
   def self.all #this is a Class Method because of self
     @@all.each do |dog|
       puts dog.name
