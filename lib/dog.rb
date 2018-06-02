@@ -12,7 +12,7 @@ class Dog
     end
   end
   def self.clear_all
-    @@all = []
+    @@all = [] #or @@all.clear
   end
   
 end
