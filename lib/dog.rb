@@ -10,6 +10,7 @@ class Dog
   
   def self.all 
     @@all.each {|dog| puts dog.name}
+    
     # This technically works, but it returns the @@all array.
     # If I want this to return nothing, then puts @@all.collect {...} or puts @@all.map {...}
   end 
