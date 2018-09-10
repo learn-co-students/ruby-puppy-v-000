@@ -10,12 +10,12 @@ class Dog
     @@all << self
   end
   
-  def self.all
-    @@alll.name.each {|dog| puts dog}
-  end
-  
   def self.clear_all
     @@clear_all
+  end
+  
+  def self.all
+    @@alll.each {|dog| puts dog}
   end
   
 end
