@@ -15,8 +15,7 @@ class Dog
   end
 
   def self.all
-    names = []
-    names << @@all.map(&:name)
+    puts @@all.map(&:name)
   end
 
 
