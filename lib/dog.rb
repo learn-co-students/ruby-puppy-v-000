@@ -11,9 +11,9 @@ class Dog
   end
 
   def self.all
-    unq_array = @@names.uniq
-    unq_array.each do |dog|
-      puts dog
+    #unq_array = @@names.uniq
+    @all.each do |dog|
+      puts dog.name
     end
   end
 
