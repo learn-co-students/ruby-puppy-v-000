@@ -12,7 +12,7 @@ class Dog
 
   def self.all
     #unq_array = @@names.uniq
-    @all.each do |dog|
+    @@all.each do |dog|
       puts dog.name
     end
   end
