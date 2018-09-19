@@ -10,8 +10,9 @@ class Dog
   end 
 
  def self.all 
-   @@all.each do |i| 
-  return i 
+   @@all
  end 
 
 end 
+
+song.all 
