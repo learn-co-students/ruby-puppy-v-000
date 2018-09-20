@@ -5,14 +5,20 @@ class Dog
 #class variable @@all that points to an array
   
  def initialize(name)
- @name = name 
- @@all << self 
+    @name = name 
+    @@all << self 
   end 
 
  def self.all 
-   @@all
- end 
+  @@all.each { |x|  puts x.name }  #Pulling .name from initialize(name)
+  
+  end 
+  
+
+   def self.clear_all
+   
+   @@all.clear 
+    
+  end 
 
 end 
-
-song.all 
