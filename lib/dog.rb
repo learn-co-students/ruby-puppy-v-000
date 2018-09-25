@@ -1,16 +1,20 @@
-class Dag
-  
-  attr_accessor :name
 
-  
-  
-  def initialize(dog)
-    @name = name 
-    @@all << self
-    
-   @@all = [] 
-  
-  end
+class Dog
+
+ attr_accessor :name
+
+ @@all = []
+
+
+
+ def initialize(name)
+
+   @name = name
+
+   @@all << self
+
+ end
+
  
     
     
@@ -22,11 +26,11 @@ class Dag
 
     
     
-    def self.clear_all 
+  def self.clear_all 
      
-      @@all.clear
+    @@all.clear
        
-    end
+  end
 
 
  end   
