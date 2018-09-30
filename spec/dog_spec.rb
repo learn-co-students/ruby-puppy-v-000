@@ -2,7 +2,7 @@ require "spec_helper"
 
 describe "Dog" do
 
-  let!(:pluto) { Dog.new("Pluto") }
+  let!(:pluto) { Dog.new("Harry") }
   let!(:fido) { Dog.new("Fido") }
   let!(:maddy) { Dog.new("Maddy") }
 
