@@ -1,5 +1,3 @@
-require 'pry'
-
 class Dog 
   attr_accessor :name
   
@@ -19,5 +17,4 @@ class Dog
   def self.clear_all
     @@all.clear
   end
-  
 end
