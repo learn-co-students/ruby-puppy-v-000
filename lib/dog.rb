@@ -21,7 +21,3 @@ class Dog
   end
   
 end
-
-
-
-#all = [#<Dog:0x0000000291d190 @name="Pluto">]
