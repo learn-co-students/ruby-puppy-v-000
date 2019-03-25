@@ -1,35 +1,21 @@
 class Dog
 
   @@all = []
+  @@names = []
 
   attr_accessor :name
 
   def initialize(name)
     @name = name
     @@all << self
+    @@names << name
   end
 
   def self.all
-    @@all
+    @@names.uniq.each {|name| puts name}
   end
 
   def self.clear_all
     @@all.clear
   end
 end
-
-# class Song
-#
-#   @@all = []
-#
-#   attr_accessor :name
-#
-#   def initialize(name)
-#     @name = name
-#     @@all << self
-#   end
-#
-#   def self.all
-#     @@all
-#   end
-# end
